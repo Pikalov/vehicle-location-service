@@ -14,12 +14,6 @@ import java.util.Objects;
 @Mapper(componentModel = "spring")
 public interface VehicleMapper {
 
-    /*
-    Using of mapstruct to map such simple entities might look as some kind of over-engineered solution, but
-    mapstruct is very useful in terms of scalability (changing the number of attributes to map mostly require
-    far less effort to map them as it automatically maps simple attributes such as id, name etc).
-    */
-
     @Mappings(
             @Mapping(target = "location", source = "location", qualifiedByName = "locationDtoToGeoJson")
     )

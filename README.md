@@ -21,6 +21,11 @@ According to the task, two REST-endpoints has been implemented:
     </li>
 </ol>
 
+To provide mapping between persistence entities and dto-s the solution using mapstruct has been implemented.
+Such solution to map such simple entities might look as some kind of over-engineered solution, but
+mapstruct is very useful in terms of scalability (changing the number of attributes to map mostly require
+far less effort to map them as it automatically maps simple attributes such as id, name etc).
+
 MongoDB has been chosen for implementing persistence layer of this application. MongoDB has mostly more performant 
 search by spatial type of data then other databases (especially comparing to PostGIS) and convenient spring-data
 with very useful spatial indexes. MongoDB's database, collection and index will be automatically created after the 
