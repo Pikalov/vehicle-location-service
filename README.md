@@ -33,9 +33,9 @@ first start of application.
 
 #### Pre-requisites
 Maven should be installed.
-MongoDB should be installed and be available on localhost with its default port 27017.
+<br>MongoDB should be installed and be available on localhost with its default port 27017.
 
 #### Run
 Run the project by following command: `mvn spring-boot:run`
-Rest endpoints are available by url: http://localhost:8080/vehicle-location-service/
-Documented api is available on Springfox Swagger UI: http://localhost:8080/swagger-ui/
+<br>Rest endpoints are available by url: http://localhost:8080/vehicle-location-service/
+<br>Documented api is available on Springfox Swagger UI: http://localhost:8080/swagger-ui/
